@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public float moveRange = 5f;
+    public float moveRangeX = 8.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +37,10 @@ public class PlayerMove : MonoBehaviour
             transform.Translate(move);
         }
 
-        float newY = Mathf.Clamp(transform.position.y, -moveRange, moveRange);
-        transform.position = new Vector2( transform.position.x, newY);
+
+        float newX = Mathf.Clamp(transform.position.x, -moveRangeX, 0);
+        float newY = Mathf.Clamp(transform.position.y, -5.2f, 3.3f);
+        transform.position = new Vector2(newX, newY);
 
     }
 }
