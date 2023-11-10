@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomPower : MonoBehaviour
+public class PushRandomPower : MonoBehaviour
 {
     public float power = 5f;
     private Rigidbody2D RB;

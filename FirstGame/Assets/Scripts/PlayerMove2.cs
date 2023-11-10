@@ -27,6 +27,17 @@ public class PlayerMove2 : MonoBehaviour
             transform.Translate(move);
         }
 
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            Vector2 move = Vector2.right * moveSpeed * Time.deltaTime;
+            transform.Translate(move);
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            Vector2 move = Vector2.left * moveSpeed * Time.deltaTime;
+            transform.Translate(move);
+        }
+
         float newY = Mathf.Clamp(transform.position.y, -moveRange, moveRange);
         transform.position = new Vector2(transform.position.x, newY);
     }
