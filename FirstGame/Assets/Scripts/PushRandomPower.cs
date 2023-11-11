@@ -9,6 +9,7 @@ public class PushRandomPower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //방향을 랜덤으로 공에게 힘을 가한다
         RB = GetComponent<Rigidbody2D>();
         Vector2 randomDirection = Random.insideUnitCircle.normalized;
         float RandomPower = Random.Range(power, power);

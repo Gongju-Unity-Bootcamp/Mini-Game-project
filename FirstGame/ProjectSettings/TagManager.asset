@@ -7,6 +7,9 @@ TagManager:
   - ball
   - player
   - wall
+  - Xwall
+  - player2 wall
+  - player1 wall
   layers:
   - Default
   - TransparentFX

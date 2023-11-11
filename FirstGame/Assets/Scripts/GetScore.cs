@@ -1,29 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GetScore : MonoBehaviour
 {
-    public float MindestroyXPosition = -9;
-    public float MaxdestroyXPosition = 9;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
-    // Update is called once per frame
-    void Update()
-    {
-        float currentXPosition = transform.position.x;
 
-        if (currentXPosition < MindestroyXPosition)
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("player1 wall"))
         {
             Destroy(gameObject);
+            Score.player1Score++;
         }
-        if(currentXPosition > MaxdestroyXPosition)
+        if (collision.gameObject.CompareTag("player2 wall"))
         {
             Destroy(gameObject);
+            Score2.player2Score++;
         }
     }
 }
