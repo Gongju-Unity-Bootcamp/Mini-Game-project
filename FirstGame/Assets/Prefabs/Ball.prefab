@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0422a5c367286984f9e909ef9a8392dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 10
+  pushForce: 5
   rotationSpeed: 180
   tiltAngle: 30
   accelerationRate: 0.1
@@ -192,5 +192,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2028c28a9b5636e4895c1630e18abb7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MindestroyXPosition: -9
-  MaxdestroyXPosition: 9
