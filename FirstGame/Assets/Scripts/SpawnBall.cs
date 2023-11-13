@@ -13,9 +13,7 @@ public class SpawnBall : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-
         CreateNewBall();
-        
     }
     void CreateNewBall()
     {
