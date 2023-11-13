@@ -16,6 +16,6 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        score.text = player1Score.ToString();
+        score.text = player1Score.ToString(); //스코어 출력
     }
 }

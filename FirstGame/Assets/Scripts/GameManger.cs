@@ -19,7 +19,7 @@ public class GameManger : MonoBehaviour
 
             menuSetActive = !menuSetActive;
             MenuSet.SetActive(menuSetActive);
-            Time.timeScale = 0f;
+            Time.timeScale = 0f;  // 설정UI를 킬때 게임 일시정지
         }
         if(menuSetActive == false)
         {
