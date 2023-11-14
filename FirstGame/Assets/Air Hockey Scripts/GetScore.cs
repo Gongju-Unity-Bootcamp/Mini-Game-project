@@ -20,9 +20,5 @@ public class GetScore : MonoBehaviour
         }
     }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        Score.player1Score = 0;
-        Score2.player2Score = 0;
-    }
+
 }

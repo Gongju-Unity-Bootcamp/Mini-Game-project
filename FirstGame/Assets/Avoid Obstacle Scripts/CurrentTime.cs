@@ -5,17 +5,18 @@ using UnityEngine.UI;
 
 public class CurrentTime : MonoBehaviour
 {
-    private float currenttime;
+    private float startTime;
     Text currentTimeText;
     // Start is called before the first frame update
     void Start()
     {
+        startTime = Time.time;
         currentTimeText = GetComponent<Text>();
     }
     // Update is called once per frame
     void Update()
     {
-        currenttime = Time.time;
-        currentTimeText.text = Time.time.ToString("F2");
+        float NewTime = Time.time - startTime;
+        currentTimeText.text = NewTime.ToString("F2");
     }
 }

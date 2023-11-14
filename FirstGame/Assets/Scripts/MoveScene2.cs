@@ -18,6 +18,6 @@ public class MoveScene2 : MonoBehaviour
     }
     public void LoadMainScene()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("Avoid Obstacle");
     }
 }
