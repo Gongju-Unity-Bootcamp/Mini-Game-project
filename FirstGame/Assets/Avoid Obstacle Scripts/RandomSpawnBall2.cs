@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomSpawnBall12 : MonoBehaviour
+public class RandomSpawnBall2 : MonoBehaviour
 {
     public GameObject Ball;
-    public float minX = 8.6f;
-    public float maxX = 0.3f;
-    public float minY = -4.7f;
-    public float maxY = 4.7f;
-    public float spawntime = 2f;
+    public float minX;
+    public float maxX;
+    public float minY;
+    public float maxY;
+    public float spawntime;
     public float minSpawntime;
-    public float Decreasespawntime = 0.1f;
-    public float initialtime = 2f;
+    public float Decreasespawntime;
+    public float initialtime;
 
 
     void Start()
