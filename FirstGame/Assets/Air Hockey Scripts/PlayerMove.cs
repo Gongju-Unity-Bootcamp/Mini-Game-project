@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-public class PlayerMove2 : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 10f;
-    public float moveRangeX = 8.5f;
-    public float moveRangeY = 5f;
+    public float moveRangeX = 9.75f;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,30 +16,32 @@ public class PlayerMove2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.UpArrow))
+        if(Input.GetKey(KeyCode.W))
         {
            Vector2 move =  Vector2.up * moveSpeed * Time.deltaTime;
             transform.Translate(move);
         }
-        if(Input.GetKey(KeyCode.DownArrow))
+        if(Input.GetKey(KeyCode.S))
         {
             Vector2 move = Vector2.down * moveSpeed * Time.deltaTime;
             transform.Translate(move);
         }
 
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.A))
         {
             Vector2 move = Vector2.left * moveSpeed * Time.deltaTime;
             transform.Translate(move);
         }
-        if (Input.GetKey(KeyCode.RightArrow))
+        if (Input.GetKey(KeyCode.D))
         {
             Vector2 move = Vector2.right * moveSpeed * Time.deltaTime;
             transform.Translate(move);
         }
 
-        float newX = Mathf.Clamp(transform.position.x, 0, moveRangeX);
-        float newY = Mathf.Clamp(transform.position.y, -5.2f, 3.3f);
+
+        float newX = Mathf.Clamp(transform.position.x, -moveRangeX, -0.5f);
+        float newY = Mathf.Clamp(transform.position.y, -5.2f, 3.4f);
         transform.position = new Vector2(newX, newY);
+
     }
 }
