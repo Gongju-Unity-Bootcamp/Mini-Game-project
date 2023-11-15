@@ -18,6 +18,6 @@ public class MoveScene1 : MonoBehaviour
     }
     public void LoadMainScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Air Hockey");
     }
 }
