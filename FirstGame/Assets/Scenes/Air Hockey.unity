@@ -1467,6 +1467,7 @@ GameObject:
   - component: {fileID: 1091533666}
   - component: {fileID: 1091533668}
   - component: {fileID: 1091533667}
+  - component: {fileID: 1091533669}
   m_Layer: 5
   m_Name: player2name
   m_TagString: Untagged
@@ -1526,7 +1527,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: player2
+  m_Text: 
 --- !u!222 &1091533668
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1535,6 +1536,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1091533665}
   m_CullTransparentMesh: 1
+--- !u!114 &1091533669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091533665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8591e0d2edf267408752d098e065338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2NameText: {fileID: 1091533667}
 --- !u!1 &1191115293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,6 +1958,7 @@ GameObject:
   - component: {fileID: 1683292428}
   - component: {fileID: 1683292430}
   - component: {fileID: 1683292429}
+  - component: {fileID: 1683292431}
   m_Layer: 5
   m_Name: player1name
   m_TagString: Untagged
@@ -2003,7 +2018,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Player 1
+  m_Text: 
 --- !u!222 &1683292430
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2012,6 +2027,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683292427}
   m_CullTransparentMesh: 1
+--- !u!114 &1683292431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683292427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab74bf550173b0c45bf21006896bc737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerNameText: {fileID: 1683292429}
 --- !u!1 &1706973334
 GameObject:
   m_ObjectHideFlags: 0
