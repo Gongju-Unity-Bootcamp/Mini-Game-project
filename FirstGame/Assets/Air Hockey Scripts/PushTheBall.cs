@@ -22,21 +22,7 @@ public class PushTheBall : MonoBehaviour
 
     }
 
-    /*void OnCollisionEnter2D(Collision2D collision)
-    {
-       
-        if (collision.gameObject.CompareTag("player"))
-        {
-                Vector2 direction = collision.contacts[0].normal;
-                RB.AddForce(direction * pushForce, ForceMode2D.Impulse);
-        }
-        if (collision.gameObject.CompareTag("wall"))
-        {
-            Vector2 direction = collision.contacts[0].normal;
-            RB.AddForce(direction * pushForce, ForceMode2D.Impulse);
-        }
 
-    }*/
     void OnCollisionStay2D(Collision2D collision)
     {
 
