@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GetScore : MonoBehaviour
 {
-    
+
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("player1 wall"))
@@ -18,7 +18,8 @@ public class GetScore : MonoBehaviour
             Destroy(gameObject);
             Score.player1Score++;
         }
+        
+
+
     }
-
-
 }
