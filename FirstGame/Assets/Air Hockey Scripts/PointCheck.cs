@@ -7,18 +7,18 @@ using UnityEngine.UI;
 public class PointCheck : MonoBehaviour
 {
     public GameObject SoundCheck;
-    public bool EffectSoundswitch;
+    public static bool EffectSoundswitch = false;
     // Start is called before the first frame update
 
     void Start()
     {
-        EffectSoundswitch = false;
         Button button = GetComponent<Button>();
         if (button != null)
         {
             button.onClick.AddListener(OnExitButtonClick);
         }
         SoundCheck.SetActive(EffectSoundswitch);
+
 
     }
     void OnExitButtonClick()
@@ -38,6 +38,5 @@ public class PointCheck : MonoBehaviour
         }
         
     }
-
 
 }
