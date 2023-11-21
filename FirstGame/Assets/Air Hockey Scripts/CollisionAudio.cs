@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class CollisionAudio : MonoBehaviour
 {
-    public AudioSource audioSource;
-    void Start()
-    {
-        audioSource = this.gameObject.GetComponent<AudioSource>();
-    }
+    public AudioClip effectSound;
+    public AudioClip GoalSound;
 
-    void OnCollisionStay2D(Collision2D collision)
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("player"))
+        if (collision.gameObject.CompareTag("player") || collision.gameObject.CompareTag("wall"))
         {
-                this.audioSource.Play();
+            AudioSource.PlayClipAtPoint(effectSound, transform.position);
+        }
+        if (collision.gameObject.CompareTag("player1 wall") || collision.gameObject.CompareTag("player2 wall"))
+        {
+            AudioSource.PlayClipAtPoint(GoalSound, transform.position);
         }
     }
 }

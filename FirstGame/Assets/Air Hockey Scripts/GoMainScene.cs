@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class GoMainScene : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,4 +20,5 @@ public class GoMainScene : MonoBehaviour
         Score2.player2Score = 0;
         SceneManager.LoadScene("MainScene");
     }
+
 }
