@@ -21,11 +21,13 @@ public class GameManger : MonoBehaviour
             MenuSet.SetActive(menuSetActive);
             Time.timeScale = 0f;  // 설정UI를 킬때 게임 일시정지
         }
-        else
+        GameObject[] player1 = GameObject.FindGameObjectsWithTag("player1");
+        GameObject[] player2 = GameObject.FindGameObjectsWithTag("player2");
+        if (menuSetActive == false )
         {
             Time.timeScale = 1f;
         }
-        
+
     }
     
        
